@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Getting Started with the Ultimate Quiz Game
 
-## Getting Started
+This is a Next.js project built with React, TypeScript, and Tailwind CSS
 
-First, run the development server:
+## Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18+ installed on your pc
+- npm or yarn package manager
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Quick Start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone my repository (https://github.com/Labi-Joy/Quiz-game) or download the code on my repo**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Navigate to the project directory**
+   cd ultimate-quiz-game (or any name you give it)
 
-## Learn More
+3. **Install dependencies**
+   npm install (for windows)
+   # or
+   yarn install (for ios)
 
-To learn more about Next.js, take a look at the following resources:
+4. **Run the development server**
+   npm run dev (for windows)
+   # or
+   yarn dev (for ios)
+   
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **Open your browser**
+   Open [http://localhost:3000](http://localhost:3000) to see the application running.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+- `app/` - Next.js App Router pages and layouts
+- `components/` - React components
+- `types/` - TypeScript type definitions
+- `app/api/` - API routes for the quiz questions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Key Files
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `app/page.tsx` - Main page component
+- `components/quiz-game.tsx` - Main quiz logic and state management
+- `components/question-card.tsx` - Individual question display
+- `components/start-screen.tsx` - Welcome screen
+- `components/result-screen.tsx` - End of quiz results
+- `app/api/questions/route.ts` - API endpoint for quiz questions
+
+## Customizing the Quiz
+
+### Adding More Questions
+
+Edit the `app/api/questions/route.ts` file to add more questions to this quiz.
+
+### Changing Styles
+
+The project uses Tailwind CSS for styling. You can modify the colors and styles in the component files as you wish
+
+## Deployment
+
+This Next.js app can be easily deployed to Vercel:
+
+**
+npm run build
+npm run start
+
+**
+Or deploy directly to Vercel with:
+npx vercel
+
+Have fun! Labi dev
