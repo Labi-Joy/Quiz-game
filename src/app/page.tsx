@@ -1,5 +1,5 @@
-import { QuizGame } from "@/components/Quiz-game"
-import { Footer } from "@/components/Footer"
+import { QuizGame } from "@/components/quiz-game"
+import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
